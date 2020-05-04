@@ -9,6 +9,7 @@ import {
 import Nosotros from './components/nosotros';
 import Contactos from './components/contactos';
 import Inicio from './components/inicio';
+import User from './components/User';
 
 
 
@@ -31,6 +32,9 @@ function App() {
      <h1>Navbar...</h1>
      <hr />
       <Switch>
+      <Route path="/nosotros/:id">
+      <User / >
+     </Route>
       <Route path="/" exact><Inicio/>
      </Route>
      <Route path="/contacto"><Contactos/>
